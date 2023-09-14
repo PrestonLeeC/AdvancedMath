@@ -1,0 +1,48 @@
+body {
+    background-color: #7A131E;
+    color: #E5D4BA;
+    text-align: center;
+    font-family: "Georgia", "Times New Roman";
+}
+
+.image-button {
+    background-color: #660e0e; /* Grey-blue background */
+    border: none;                /* No border for a flat look */
+    border-radius: 50%;          /* Perfectly rounded corners */
+    padding: 10px;               /* Padding around the image */
+    cursor: pointer;             /* Cursor changes to hand pointer on hover */
+    overflow: hidden;            /* Hide overflow for perfect rounding */
+}
+
+.image-button:hover {
+    background-color: #bc6373; /* Grey-blue background */
+}
+
+.image-button img {
+    display: block;              /* Makes the image a block element to remove any extra space */
+    width: 100px;                 /* Set the image width */
+    height: auto;                /* Auto height based on aspect ratio */
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td {
+    border: none;
+    min-width: 140px;  /* Minimum width */
+    height: 60px;  /* Height */
+    text-align: center;  /* Center text */
+    vertical-align: middle;  /* Center vertically */
+}
+
+td::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;  /* Adjust this value to move the underline up or down */
+    height: 1px;
+    width: 100%;
+    background-color: rgb(81, 171, 201);
+}
